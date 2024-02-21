@@ -38,8 +38,8 @@ header{
 }
 
 .search_icon{
-    position:relative;
-    /* right: 10rem; */
+    position:absolute;
+    right: 10rem;
     top: 0.2rem;
     font-size: 1.5rem;
 }
