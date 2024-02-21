@@ -1,11 +1,10 @@
 import './App.css'
-
+import Header from './Component/Header';
 function App() {
 
   return (
     <>
-      <h1>jewellery</h1>
-      
+      <Header/>
     </>
   )
 }
