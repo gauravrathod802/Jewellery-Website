@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div>
        {/* <!-- footer section starts --> */}
-        <footer class="footer_widgets footer_black">
+        <footer className="footer_widgets footer_black">
             <div class="container">
                 <div class="footer_top">
                     <div class="row">
