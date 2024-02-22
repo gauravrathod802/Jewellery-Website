@@ -159,7 +159,7 @@ nav{
 
     .nav-left i{
         cursor: pointer;
-        padding: 10px;
+        /* padding: 10px; */
         margin-left: -15px;
     }
 }
@@ -177,10 +177,6 @@ nav{
 
     .nav-right{
         width: 25%;
-    }
-
-    .nav-left i{
-        margin-left: -10px;
     }
 }
 
@@ -201,9 +197,5 @@ nav{
 
     nav{
         width: 63%; 
-    }
-
-    .nav-left i{
-        margin-left: 10px;
     }
 }
