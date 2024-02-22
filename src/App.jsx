@@ -8,7 +8,7 @@ function App() {
     <>
       <Header/>
       <CustomerStory />
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }
