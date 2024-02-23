@@ -1,4 +1,3 @@
-import React from 'react'
 import "./CustomerStory.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -103,7 +102,6 @@ const CustomerStory = () => {
         </div>
 
       </Carousel>
-      ;
     </div>
   );
 };
