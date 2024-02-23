@@ -84,7 +84,7 @@ nav{
     font-size: 20px;
     cursor: pointer;
     margin: 25px 0 15px 15px;
-    padding: 10px;
+    padding: 7px;
     display: none;
 }
 
@@ -103,7 +103,8 @@ nav{
     align-items: center;
     gap: 1rem;
     font-size: 1.1rem;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -184,15 +185,15 @@ nav{
 @media screen and (max-width: 420px) {
 
     img{
-        height: 45px;
+        height: 40px;
     }
 
     .nav-left{
-        width: 32%
+        width: 30%
     }
 
     .nav-right{
-        width: 10%;
+        width: 19%;
     }
 
     nav{
