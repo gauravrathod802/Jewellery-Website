@@ -1,6 +1,8 @@
 .slider-container {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 2rem;
+
 }
 
 .slick-dots {
