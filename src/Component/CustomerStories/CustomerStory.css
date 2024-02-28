@@ -3,42 +3,90 @@
     margin-top: 10px;
     text-align: center;
 }
+.containers h1{
+    font-size:35px;
+    font-weight: 500;
+    font-family: "Lato";
+}
 .containers .sub-container .sub-container-child{
     margin-top: 20px;
     width: 96%;
-    height: 260px;
+    height: 200px;
     background-color: #FFD0CE;
     border-radius: 10px;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 .containers .sub-container .sub-container-child h5{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
 }
 .containers .sub-container .sub-container-child p{
-    line-height: 130%;
-    margin-top: 10px;
+    /* margin-top: 8px; */
     text-align: center;
     width: 96%;
     height: 80px;
-    padding-left: 5px;
+    font-weight:400;
+    padding: 0 45px;
+    line-height: 25px;
+    font-family: "Lato";
     overflow: hidden;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .containers .sub-container .bottom-img{
     transform: translateY(-45%);
 }
 .containers .sub-container .bottom-img img{
     border-radius: 50%;
-    width: 150px;
+    width: 100px;
     height: auto;
+    cursor: pointer;
 }
 @media screen and (max-width:450px) {
-    .sub-container-child{
+    .containers .sub-container .sub-container-child{
         width: 96%;
-        height: 300px;
+        height: 155px;
     }
     .containers .sub-container .bottom-img{
         transform: translateY(-37%);
     }
+    .containers .sub-container .bottom-img img{
+        width: 80px;
+    }
+}
+
+
+
+
+
+/* buttons */
+.react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 35px;
+    z-index: 1000;
+    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 43px;
+    min-height: 43px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+/* Override the position of the right arrow */
+.react-multi-carousel__arrow--right {
+    right: calc(1% + 1px); /* Adjust the right position */
+    top: 100px; /* Adjust the top position */
+}
+
+/* Override the position of the left arrow if needed */
+.react-multi-carousel__arrow--left {
+    /* Your styles here */
+}
+
+/* Override the styles of the arrows */
+.react-multi-carousel__arrow {
+    /* Your styles here */
 }

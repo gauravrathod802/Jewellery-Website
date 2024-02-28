@@ -66,11 +66,11 @@ const Footer = () => {
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-7">
                             <div class="widgets_container product_widget">
-                                <h3>Top Rated Products</h3>
+                                <h3 className='popular_product'>Popular Products</h3>
                                 <div class="simple_product">
                                     <div class="simple_product_items">
                                         <div class="simple_product_thumb">
-                                            <a href="#"><img src="images/product/14.jpg" alt="" /></a>
+                                            <a href="#"><img src="https://www.giva.co/cdn/shop/files/R0688_5.jpg?v=1685630347&width=320" alt="" /></a>
                                         </div>
                                         <div class="simple_product_content">
                                             <div class="tag_cate">
@@ -88,7 +88,7 @@ const Footer = () => {
                                     </div>
                                     <div class="simple_product_items">
                                         <div class="simple_product_thumb">
-                                            <a href="#"><img src="images/product/28.jpg" alt="" /></a>
+                                            <a href="#"><img src="https://www.giva.co/cdn/shop/files/R0688_5.jpg?v=1685630347&width=320" alt="" /></a>
                                         </div>
                                         <div class="simple_product_content">
                                             <div class="tag_cate">

@@ -2,6 +2,7 @@ import "./CustomerStory.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+
 const CustomerStory = () => {
   const responsive = {
     superLargeDesktop: {
@@ -22,18 +23,19 @@ const CustomerStory = () => {
       items: 1,
     },
   };
+
+
   return (
     <div className="containers">
-      <h1>Customer Story</h1>
-      <Carousel responsive={responsive}>
+      <h1>Customer Stories</h1>
+      <Carousel responsive={responsive}
+     >
         <div className="sub-container">
           <div className="sub-container-child">
             <h5>Priyanka</h5>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-              eveniet quo tempora dignissimos perspiciatis, praesentium fuga
-              facilis quidem nesciunt officiis nemo earum ipsam ab animi hic
-              commodi eius voluptatibus dolore?
+              eveniet quo tempora dignissimos perspiciatis, praesentium fug
             </p>
           </div>
           <div className="bottom-img">

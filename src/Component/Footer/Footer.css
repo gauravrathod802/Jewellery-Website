@@ -17,7 +17,7 @@
 .row{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: start;
 }
 
@@ -105,11 +105,15 @@
 }
 
 .simple_product_thumb {
-  width: 22%;
+  width: 30%;
+}
+.simple_product_thumb img{
+  width: 100%;
+  height: 100%;
 }
 
 .simple_product_content {
-  width: 70%;
+  width: 50%;
 }
 
 .simple_product_content .tag_cate a{
@@ -124,12 +128,12 @@
 }
 .simple_product_content .product_name h3 {
   font-size: 10px;
-  line-height: 16px;
+  line-height: 35px;
 }
 
 .simple_product_content .product_name h3 a {
   color: #fff;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .simple_product_content .product_name h3 a:hover {
@@ -154,11 +158,20 @@
 
 @media screen and (max-width:450px){
   .row{
-      display: grid;
+      display: flex;
+      flex-direction: column;
       text-align: center;
   }
   .row .widgets_container{
       text-align: center;
+  }
+  .footer_black .widgets_container .popular_product{
+    text-align: center;
+  }
+  .footer_black .widgets_container > h3{
+    /* color: red; */
+    font-size: 50%;
+    font-family: "Lato";
   }
   .widgets_container ul{
     margin-bottom: 20px;
@@ -167,13 +180,31 @@
     margin-top: 20px;
     text-align: center;
 }
-  .footer_menu ul li {
+  .footer_menu ul li a{
     text-align: center;
+  }
+  .simple_product_thumb img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .simple_product_thumb{
+    margin-left: 10%;
   }
 }
 
-@media screen and(max-width:750px) {
-  
+@media screen and (max-width: 850px) {
+  .row{
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .footer_black .widgets_container > h3{
+    font-size: 15px;
+    /* color: red; */
+    /* text-align: center; */
+  }
 }
 /* *********footer bottom ******* */
 .footer_bottom {
@@ -196,7 +227,22 @@
 .copyright_area p a:hover {
   text-decoration: underline;
 }
-
+.simple_product_thumb img{
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+.simple_product_thumb{
+  margin-left: 10%;
+}
+@media screen and (max-width: 1100px) {
+  .row{
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
 /* ***********************over ************** */
 
 /* ********************** Footer payment option ********************/
