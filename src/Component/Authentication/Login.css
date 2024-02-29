@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .login-container{
@@ -27,7 +29,7 @@
 }
 .myForm input[type="email"],input[type="password"],input[type="text"]{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     padding: 6px;
     padding-left: 30px;
@@ -36,12 +38,14 @@
 }
 .loginBtn{
     width: 100%;
-    border-radius: 15px;
+    border-radius:5px;
     border: none;
     padding: 6px;
     background-color: orangered;
     color: white;
     margin: 1rem 0;
+    transition: transform 0.3s ease-in-out; 
+
 }
 
 .loginBtn:hover{
@@ -120,7 +124,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 1.1rem;
     border: none;
     height: 1.5rem;

@@ -2,10 +2,15 @@ import { useState } from 'react';
 import './Login.css';
 import { FaUser, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
-
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
     const [passwordType, setPasswordType] = useState('password');
     const [passwordIcon, setPasswordIcon] = useState(<FaEyeSlash />);
+    const navigate = useNavigate();
+
+    const gotoSignUp = () => {
+        navigate("/Jewellery-Website/sign-up");
+    }
 
     const handleToggle = () => {
         if (passwordType === 'password') {
@@ -34,15 +39,15 @@ const Login = () => {
                         <input type={passwordType} name='password' id="password" placeholder='Enter Password' />
                     </div>
                     <input type="submit" value="Login" className='loginBtn' />
-                    <p>Don&apos; t have an account? <a href="#register">Sign up</a></p>
+                    <p>Don&apos; t have an account? <a href="" onClick={gotoSignUp} >Sign up</a></p>
                     <h4 className='title'>or</h4>
                     <p style={{ textAlign: 'center' }}>Sign up using</p>
                     <div className="social">
-            <button className='google'>
-              <a href="#google" className='google'><FcGoogle /></a>
-              <span>Login with Google</span>
-            </button>
-          </div>
+                        <button className='google'>
+                            <a href="#google" className='google'><FcGoogle /></a>
+                            <span>Login with Google</span>
+                        </button>
+                    </div>
 
                 </form>
             </div>

@@ -2,9 +2,16 @@ import { useState } from 'react';
 import './SignUp.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from 'react-router-dom';
 const SignUp = () => {
   const [passwordType, setPasswordType] = useState('password');
   const [passwordIcon, setPasswordIcon] = useState(<FaEyeSlash />);
+
+  const navigate= useNavigate();
+
+  const gotoLogin = () => {
+    navigate("/Jewellery-Website/login");
+  }
 
   const handleToggle = () => {
     if (passwordType === 'password') {
@@ -39,7 +46,7 @@ const SignUp = () => {
             <input type={passwordType} name='password' id="password" placeholder='Enter Password' />
           </div>
           <input type="submit" value="Sign up" className='loginBtn' />
-          <p>Already have an account? <a href="#register">Login</a></p>
+          <p>Already have an account? <a href="" onClick={gotoLogin}>Login</a></p>
           <h4 className='title'>or</h4>
           <p style={{ textAlign: 'center' }}>Sign up using</p>
 
