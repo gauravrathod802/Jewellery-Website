@@ -5,16 +5,39 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () => {
+    const navigate = useNavigate();
+
+  const handleAccountClick = () => {
+    navigate("/Jewellery-Website/login"); // Navigate to the account route
+  };
+
+  const handleWishlistClick = () => {
+    navigate("/Jewellery-Website/wishlist"); // Navigate to the wishlist route
+  };
+
+  const handleCartClick = () => {
+    navigate("/Jewellery-Website/cart"); // Navigate to the cart route
+  };
+
+  const handleHomeClick = () => {
+    navigate("/Jewellery-Website/");
+  }
+
+
+
+
+
     return (
         <>
             <header>
                 <nav>
                     <div className="nav-left">
                         <i><FaBars /></i>
-                        <a href="#"><img className="logo_img" src={Logo} alt="" /></a>
+                        <a href="" onClick={handleHomeClick}><img className="logo_img" src={Logo} alt="" /></a>
                     </div>
 
                     <div className="nav-right">
@@ -24,17 +47,17 @@ const Header = () => {
                             <i><IoIosSearch /></i>
                         </div>
 
-                        <div>
+                        <div onClick={handleAccountClick}>
                             <i><FaRegUser className='icon-right'/></i>
                             <p>Account</p>
                         </div>
 
-                        <div>
+                        <div onClick={handleWishlistClick}>
                             <i><FaRegHeart className='icon-right'/></i>
                             <p>Wishlist</p>
                         </div>
 
-                        <div>
+                        <div onClick={handleCartClick}>
                             <i><MdOutlineShoppingCart className='icon-right'/></i>
                             <p>Cart</p>
                         </div>

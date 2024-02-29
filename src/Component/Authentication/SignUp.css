@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .login-container{
@@ -17,6 +19,7 @@
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
+
 .myForm h2{
     color: orangered;
 }
@@ -24,9 +27,9 @@
 .myForm p{
     font-size: 0.8rem;
 }
-.myForm input[type="email"],input[type="password"]{
+.myForm input[type="email"],input[type="password"],input[type="text"]{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     padding: 6px;
     padding-left: 30px;
@@ -36,12 +39,14 @@
 
 .loginBtn{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     padding: 6px;
     background-color: orangered;
     color: white;
     margin: 1rem 0;
+    transition: transform 0.3s ease-in-out; 
+
 }
 
 .loginBtn:hover{
@@ -55,10 +60,10 @@
 
 .myForm .icon {
     position: absolute;
-    left:8px; /* Adjust the left position as needed */
+    left:8px; 
     top: 35%;
     transform: translateY(-50%);
-    color: #666; /* Adjust the color as needed */
+    color: #666;
 }
 
 .eyeIcon{
@@ -120,7 +125,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 1.1rem;
     border: none;
     height: 1.5rem;
@@ -133,4 +138,31 @@ a{
 }
 .google span{
     margin-right: 0.8rem;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .myForm {
+        padding: 25px; 
+        margin: 2.5rem;
+    }
+    .myForm input[type="email"],input[type="password"],input[type="text"]{
+        padding-left: 35px;
+        margin-left: -4px;
+        margin-right: 7px;
+    }
+
+    .loginBtn{
+        margin: 1rem 0;
+        margin-left: -4px;
+        margin-right: 7px;   
+    }
+    .myForm p{
+        font-size: 0.8rem ;
+    }
+
+
 }

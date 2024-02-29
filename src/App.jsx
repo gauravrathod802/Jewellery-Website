@@ -7,6 +7,9 @@ import RingCategories from './Component/Ring categories/RingCategories';
 import {Routes, Route} from 'react-router-dom';
 import Login from './Component/Authentication/Login';
 import SignUp from './Component/Authentication/SignUp';
+import EssentialProduct from './Component/Kalyani Essentials/EssentialProduct';
+import Cart from './Component/Cart/Cart';
+import Wishlist from './Component/Wishlist/Wishlist';
 
 function App() {
 
@@ -17,16 +20,19 @@ function App() {
       {/* <RingCategories/> */}
       {/* <CustomerStory/> */}
       <Routes>
-        <Route path="/" element={
+        <Route path="/Jewellery-Website/" element={
           <>
             <SimpleSlider />
             <RingCategories />
             <CustomerStory />
+            <EssentialProduct/>
           </>
           } />
 
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/sign-up" element={<SignUp/>}/>
+        <Route path="/Jewellery-Website/login" element={<Login/>}/>
+        <Route path="/Jewellery-Website/sign-up" element={<SignUp/>}/>
+        <Route path='/Jewellery-Website/cart' element={<Cart/>}/>
+        <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
       </Routes>
       <Footer/>
 
