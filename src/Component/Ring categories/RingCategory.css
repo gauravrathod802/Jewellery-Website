@@ -46,6 +46,7 @@
 .category{
     display: flex;
     justify-content: center;
+    margin-top: -1rem;
 }
 
 .ring img {
@@ -65,26 +66,20 @@
         top: 45%;
     }
     .ring {
-        position: relative; 
-        display: inline-block; 
-        margin-right: 20px; 
-        cursor: pointer;
         margin-top: -3rem;
-    
+    }
+    .category{
+        margin-top: -1rem;
+        font-size: 0.8rem;
     }
 } 
 
 
 @media screen and (max-width: 500px) {
     .custom-btn {
-        top: 29%;
+        top: 34%;
     }
     .ring {
-        position: relative; 
-        display: inline-block; 
-        margin-right: 20px; 
-        cursor: pointer;
-        margin-top: -5rem;
-    
+        margin-top: -5rem;    
     }
 } 
