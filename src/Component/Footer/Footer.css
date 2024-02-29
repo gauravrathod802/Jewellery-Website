@@ -31,7 +31,7 @@
   font-size: 25px;
   line-height: 26px;
   text-transform: capitalize;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .footer_contact p {
@@ -90,9 +90,6 @@
   color: #a8741a;
 }
 
-
-
-
 .simple_product_items {
   display: flex;
   padding-bottom: 10px;
@@ -105,15 +102,11 @@
 }
 
 .simple_product_thumb {
-  width: 30%;
+  width: 22%;
 }
 .simple_product_thumb img{
   width: 100%;
   height: 100%;
-}
-
-.simple_product_content {
-  width: 50%;
 }
 
 .simple_product_content .tag_cate a{
@@ -169,8 +162,8 @@
     text-align: center;
   }
   .footer_black .widgets_container > h3{
-    /* color: red; */
     font-size: 50%;
+    text-align: center;
     font-family: "Lato";
   }
   .widgets_container ul{
@@ -179,8 +172,11 @@
   .footer_contact ul {
     margin-top: 20px;
     text-align: center;
-}
+  }
   .footer_menu ul li a{
+    text-align: center;
+  }
+  .contact_us .footer_contact p{
     text-align: center;
   }
   .simple_product_thumb img{
@@ -188,8 +184,19 @@
     height: 100%;
     cursor: pointer;
   }
-  .simple_product_thumb{
-    margin-left: 10%;
+  .simple_product_items{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: calc(4% + 0px);
+    top: 30%;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: calc(4% + 1px);
+    top: 30%;
   }
 }
 
@@ -200,16 +207,39 @@
     justify-content: space-evenly;
     text-align: center;
   }
+  .footer_black  .widgets_container{
+    margin-left: 30px;
+  }
   .footer_black .widgets_container > h3{
     font-size: 15px;
     /* color: red; */
     /* text-align: center; */
   }
+  .simple_product{
+    font-size: 14px;
+  }
+  .footer_contact p{
+    text-align: start;
+  }
+  .contact_us h3{
+    text-align: start;
+  }
+  .widget_menu .footer_menu ul li a{
+    text-align: center;
+  }
+  .simple_product .product_name h3 a{
+    font-size: 14px;
+    line-height: normal;
+  }
+  .widget_menu {
+    text-align: center;
+  }
 }
 /* *********footer bottom ******* */
+
 .footer_bottom {
   padding: 38px 0 10px;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 .copyright_area {
@@ -240,6 +270,18 @@
     display: flex;
     align-items: normal;
     justify-content: space-around;
+    text-align: center;
+  }
+  .footer_black  .widgets_container{
+    margin-left: 30px;
+  } 
+  .footer_contact p{
+    text-align: start;
+  }
+  .contact_us h3{
+    text-align: start;
+  }
+  .widget_menu .footer_menu ul li a{
     text-align: center;
   }
 }

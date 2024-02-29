@@ -40,7 +40,20 @@
     height: auto;
     cursor: pointer;
 }
+.react-multiple-carousel__arrow--left {
+    margin-left: calc(-4% + 5px);
+    top: 30%;
+  }
+  .react-multiple-carousel__arrow--right {
+    margin-right: calc(-2% + 2px);
+    top: 30%;
+  }
+  
 @media screen and (max-width:450px) {
+    .react-multiple-carousel__arrow--right {
+        margin-right: calc(-1% + 10px);
+        top: 30%;
+      }
     .containers .sub-container .sub-container-child{
         width: 96%;
         height: 155px;
@@ -51,6 +64,18 @@
     .containers .sub-container .bottom-img img{
         width: 80px;
     }
+    .containers h1{
+        font-size:25px;
+        font-weight: 500;
+        font-family: "Lato";
+    }
+    .containers .sub-container .sub-container-child h5{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .containers .sub-container .sub-container-child p{
+        font-size: 15px;
+    }
 }
 
 
@@ -58,7 +83,7 @@
 
 
 /* buttons */
-.react-multiple-carousel__arrow {
+/* .react-multiple-carousel__arrow {
     position: absolute;
     outline: 0;
     transition: all .5s;
@@ -70,23 +95,23 @@
     min-height: 43px;
     opacity: 1;
     cursor: pointer;
-}
+} */
 
 
 
 
 /* Override the position of the right arrow */
-.react-multi-carousel__arrow--right {
+/* .react-multi-carousel__arrow--right {
     right: calc(1% + 1px); /* Adjust the right position */
-    top: 100px; /* Adjust the top position */
-}
+    /* top: 100px;  Adjust the top position 
+} */
 
 /* Override the position of the left arrow if needed */
-.react-multi-carousel__arrow--left {
+/* .react-multi-carousel__arrow--left { */
     /* Your styles here */
-}
+/* } */
 
 /* Override the styles of the arrows */
-.react-multi-carousel__arrow {
+/* .react-multi-carousel__arrow { */
     /* Your styles here */
-}
+/* } */ 
