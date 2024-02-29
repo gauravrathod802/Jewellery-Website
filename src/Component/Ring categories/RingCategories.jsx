@@ -6,13 +6,32 @@ import "slick-carousel/slick/slick-theme.css";
 
 const RingCategories = () => {
   const sliderRef = useRef(null);
-  const [slidesToShow, setSlidesToShow] = useState(7); // Default to 7 slides for larger screens
+  const [slidesToShow, setSlidesToShow] = useState(7);
 
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 7
+    slidesToScroll: 1,
+    swipeToSlide: true, 
+    touchMove: true,
+    draggable: true,
+    touchThreshold: 10,
+    swipe: true,
+    responsive: [
+      {
+        breakpoint: 768, // For tablets
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 576, // For mobile phones
+        settings: {
+          slidesToShow: 4,
+        }
+      }
+    ]
   };
 
   const goToPrev = () => {

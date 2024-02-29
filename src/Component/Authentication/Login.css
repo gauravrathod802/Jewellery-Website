@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.myForm{
+    background-color: rgb(214, 225, 229);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px #00000041;
+}
+.myForm h2{
+    color: orangered;
+    margin-top: -10px;
+}
+
+.myForm p{
+    font-size: 0.8rem;
+}
+.myForm input[type="email"],input[type="password"],input[type="text"]{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 6px;
+    padding-left: 30px;
+    margin-bottom: 0.7rem;
+    outline-color: orangered;
+}
+.loginBtn{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 6px;
+    background-color: orangered;
+    color: white;
+    margin: 1rem 0;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.myForm .icon {
+    position: absolute;
+    left:8px; /* Adjust the left position as needed */
+    top: 35%;
+    transform: translateY(-50%);
+    color: #666; /* Adjust the color as needed */
+}
+
+.eyeIcon{
+    position: absolute;
+    right: 14px;
+    top:0;
+    bottom: 10px !important;
+    margin: auto;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    max-width: 450px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+
+}
+
+.title::before{
+    content: "";
+    width: 90px;
+    height: 0.5px;
+    display: block;
+    background: rgb(129, 125, 125);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.title::after{
+    content: "";
+    width: 90px;
+    height: 0.5px;
+    display: block;
+    background: rgb(129, 125, 125);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    font-size:  1.4rem;
+    align-items: center;
+    margin: 0.3rem 0;
+
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1.1rem;
+    border: none;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.google a{
+    margin-left: -0.8rem;
+    font-size: 1.2rem;
+}
+.google span{
+    margin-right: 0.8rem;
+}
+
+.google:hover{
+    transform: scale(1.02);
+}
