@@ -4,6 +4,7 @@ import Footer from './Component/Footer/Footer';
 import SimpleSlider from './Component/Slider/SimpleSlider';
 import CustomerStory from './Component/CustomerStories/CustomerStory';
 import RingCategories from './Component/Ring categories/RingCategories';
+import EssentialProduct from './Component/Kalyani Essentials/EssentialProduct';
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <SimpleSlider/>
       <RingCategories/>
+      <EssentialProduct/>
       <CustomerStory/>
       <Footer/>
     </>
