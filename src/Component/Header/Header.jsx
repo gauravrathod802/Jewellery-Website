@@ -1,4 +1,4 @@
-import Logo from '../../assets/newLogo2.png';
+import Logo from '../../assets/logo2.png';
 import './Header.css';
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";

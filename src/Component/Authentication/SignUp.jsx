@@ -16,7 +16,7 @@ const SignUp = () => {
   const handleToggle = () => {
     if (passwordType === 'password') {
       setPasswordType('text');
-      setPasswordIcon(<FaEye />);
+      setPasswordIcon(<FaEye/>);
     } else {
       setPasswordType('password');
       setPasswordIcon(<FaEyeSlash />);
@@ -46,7 +46,7 @@ const SignUp = () => {
             <input type={passwordType} name='password' id="password" placeholder='Enter Password' />
           </div>
           <input type="submit" value="Sign up" className='loginBtn' />
-          <p>Already have an account? <a href="" onClick={gotoLogin}>Login</a></p>
+          <p>Already have an account? <a href="#" onClick={gotoLogin}>Login</a></p>
           <h4 className='title'>or</h4>
           <p style={{ textAlign: 'center' }}>Sign up using</p>
 

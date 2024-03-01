@@ -25,21 +25,21 @@ const Login = () => {
     return (
         <div className='main'>
             <div className="login-container">
-                <form action="" className='myForm'>
+                <form action="" className='loginForm'>
                     <h2>Login</h2><br />
                     <div className="inputWithIcon">
                         <FaUser className="icon" />
                         <input type="email" name="email" id="email" placeholder='Enter Email' />
                     </div>
                     <div className="inputWithIcon">
-                        <span className='eyeIcon' onClick={handleToggle}>
+                        <span className='eyeIcon' onClick={handleToggle} >
                             {passwordIcon}
                         </span>
                         <FaLock className="icon" />
                         <input type={passwordType} name='password' id="password" placeholder='Enter Password' />
                     </div>
                     <input type="submit" value="Login" className='loginBtn' />
-                    <p>Don&apos; t have an account? <a href="" onClick={gotoSignUp} >Sign up</a></p>
+                    <p>Don&apos; t have an account? <a href="#" onClick={gotoSignUp}>Sign Up</a></p>
                     <h4 className='title'>or</h4>
                     <p style={{ textAlign: 'center' }}>Sign up using</p>
                     <div className="social">

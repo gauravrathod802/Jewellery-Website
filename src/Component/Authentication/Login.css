@@ -13,21 +13,22 @@
     margin-bottom: 2rem;
 }
 
-.myForm{
+.loginForm{
     background-color: rgb(214, 225, 229);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
-.myForm h2{
+.loginForm h2{
     color: orangered;
     margin-top: -10px;
 }
 
-.myForm p{
+.loginForm p{
     font-size: 0.8rem;
+    text-align: center;
 }
-.myForm input[type="email"],input[type="password"],input[type="text"]{
+.loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -57,7 +58,7 @@
     position: relative;
 }
 
-.myForm .icon {
+.loginForm .icon {
     position: absolute;
     left:8px; /* Adjust the left position as needed */
     top: 35%;
@@ -141,4 +142,43 @@ a{
 
 .google:hover{
     transform: scale(1.02);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .loginForm {
+        padding: 25px; 
+        margin: 2.5rem;
+    }
+    .loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
+        padding-left: 35px !important;
+    }
+
+    .loginBtn{
+        margin: 1rem 0;
+    }
+    .loginForm p{
+        font-size: 0.8rem ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loginForm {
+        padding: 20px; 
+        margin: 2.5rem 4.3rem;
+    }
+
+    .loginForm p{
+        font-size: 0.6rem ;
+    }
+
+    .google a{
+        margin-left: -1.1rem;
+        font-size: 1.1rem;
+    }
+    .google span{
+        font-size: 0.7rem;
+        margin-right: 0.12rem;
+    }
 }
