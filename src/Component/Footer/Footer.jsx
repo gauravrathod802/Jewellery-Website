@@ -22,7 +22,9 @@ const Footer = () => {
                             <div className="widgets_container contact_us">
                                 <h3>About Kalyani</h3>
                                 <div className="footer_contact">
-                                    <p>Address : Kalyani palace, Surat, Gujarat</p>
+                                    <p>Address : plot no 243 gali no 4,<br/>
+                                        rishi galav nagar, galta gate, <br/>
+                                        jaipur (raj) pincode 302003</p>
                                     <p>Phone : (+91) 888888885555</p>
                                     <p>Email : kalyanijewlers@gmail.com</p>
                                     <ul>
@@ -40,24 +42,24 @@ const Footer = () => {
                                 <div className="footer_menu">
                                     <ul>
                                         <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Blog</a></li>
                                         <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Services</a></li>
                                         <li><a href="#">Collection</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        {/* <li><a href="#">          </a></li>
+                                        <li><a href="#">          </a></li> */}
+                                        {/* <li><a href="#">Portfolio</a></li> */}
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-5 col-6">
-                            <div className="widgets_container widget_menu">
+                            <div className="widgets_container widget_menu widget_menu-2">
                                 <h3>My Account</h3>
                                 <div className="footer_menu">
                                     <ul>
                                         <li><a href="#">My Account</a></li>
                                         <li><a href="#">Contact</a></li>
                                         <li><a href="#">Wishlist</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        {/* <li><a href="#">Portfolio</a></li> */}
                                         <li><a href="#">Checkout</a></li>
                                         <li><a href="#">Frequently Questions</a></li>
                                     </ul>

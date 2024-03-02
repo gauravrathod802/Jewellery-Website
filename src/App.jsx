@@ -35,7 +35,6 @@ function App() {
         <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
       </Routes>
       <Footer/>
-
     </>
   )
 }

@@ -147,7 +147,9 @@
 .simple_product_content .product_price span.current_price {
   color: #a8741a;
   font-weight: 500;
+  
 }
+
 
 @media screen and (max-width:450px){
   .row{
@@ -190,14 +192,6 @@
     align-items: center;
     justify-content: center;
   }
-  .react-multiple-carousel__arrow--left {
-    left: calc(4% + 0px);
-    top: 30%;
-  }
-  .react-multiple-carousel__arrow--right {
-    right: calc(4% + 1px);
-    top: 30%;
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -207,13 +201,8 @@
     justify-content: space-evenly;
     text-align: center;
   }
-  .footer_black  .widgets_container{
-    margin-left: 30px;
-  }
   .footer_black .widgets_container > h3{
     font-size: 15px;
-    /* color: red; */
-    /* text-align: center; */
   }
   .simple_product{
     font-size: 14px;
@@ -272,9 +261,6 @@
     justify-content: space-around;
     text-align: center;
   }
-  .footer_black  .widgets_container{
-    margin-left: 30px;
-  } 
   .footer_contact p{
     text-align: start;
   }
@@ -296,3 +282,4 @@
   cursor: pointer;
 }
 /* ************************** Footer payment option *********************/
+
