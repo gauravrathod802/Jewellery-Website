@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: "Lato";
-  text-align: center;
 }
 .product-main h1{
     font-size: 35px;
     font-weight: 500;
+    text-align: center;
 }
 .products {
   width: 100%;
@@ -54,6 +54,7 @@
   width: 70%;
   object-fit: cover;
   transition: 0.3s;
+  cursor: pointer;
 }
 .products .box .card .image img:hover {
   transform: scale(1.1);
