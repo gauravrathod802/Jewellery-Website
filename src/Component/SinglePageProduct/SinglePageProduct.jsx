@@ -1,44 +1,71 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom'
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import './SinglePageProduct.css';
 
 const SinglePageProduct = () => {
     
-    const [formData, setFormData] = useState({
-        fullName: '',
-        email: '',
-        phoneNumber: '',
-        payment: '',
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 3,
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3,
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2,
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+        },
+      };
+    
+
+    const [productData, setproductData] = useState({
+        imagename: '',
+        title: '',
+        description: '',
+        rating: '',
+        price:''
 
     });
 
     const navigate = useNavigate();
     const { state } = useLocation();
-    const event = state?.event;
+    const event = state?.product;
 
     //   console.log('Selected Event:', event);
 
     useEffect(() => {
         // Set initial values from the selected event when component mounts
         if (event) {
-            setFormData({
-                fullName: '',
-                email: '',
-                phoneNumber: '',
-                payment: event.price || '', // Set payment field with event price
+            setproductData({
+                imagename: '',
+                title: '',
+                description: '',
+                rating:'',
+                price: event.price || '', // Set payment field with event price
+                // price:''
             });
         }
     }, [event]);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setproductData({ ...productData, [name]: value });
     };
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
         //logic to handle form submission, e.g., sending data to a server
-        console.log('Form submitted:', formData, 'Event details:', event);
+        console.log('Form submitted:', productData, 'Event details:', event);
     };
 
 
@@ -49,67 +76,36 @@ const SinglePageProduct = () => {
 
 
   return (
-    <div className="container-registration">
-    <div className="event-details">
-        {event && (
-            <div>
-                <img src={event.image} alt="" />
-                <p>Location: {event.location}</p>
-                <p>Title: {event.title}</p>
-                <p>Price: {event.price}</p>
+    <div className="singlepageproduct-container">
+        <div className='singlepageproduct-left'>
+            <div className="singlepageproduct-image">
+                {event && (
+                    <div>
+                        <img src={event.imagename} alt="image" />
+                    </div>
+                )}
+                <div className='singlepageproduct-button'>
+                    <button className='add-to-cart-btn'>Add to Cart</button>
+                    <button className='buy-now-btn'>Buy Now</button>
+                </div>
             </div>
-        )}
-    </div>
-
-    <div className="registration-form">
-        <h2>Registration Form</h2>
-
-        <form onSubmit={handleFormSubmit}>
-            <label htmlFor="fullName">Full Name:</label>
-            <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleInputChange}
-                required
-            />
-
-            <label htmlFor="email">Email:</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-            />
-
-            <label htmlFor="phoneNumber">Phone Number:</label>
-            <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleInputChange}
-                required
-            />
-            <label htmlFor="payment">Payment:</label>
-            <input
-                type="text"
-                id="payment"
-                name="payment"
-                value={formData.payment}
-                onChange={handleInputChange}
-                required
-            />
-
-            <button type="submit">Submit</button>
-        </form>
-        <button onClick={handleBackClick} className="back">
-            Back
-        </button>
-    </div>
+        </div>
+        <div className="singlepageproduct-right">
+            <div className='singlepageproduct-details'>
+                <div className='singlepageproduct-smalldetails'>
+                <h1>Product Details</h1>
+                <p>Description: {event.description}</p>
+                <p>Rs. {event.price}</p>
+                {/* <p>Rating {event.rating}</p> */}
+                </div>
+                <div className='singlepageproduct-smalldetails'>
+                <h1>Product Details</h1>
+                <p>Description: {event.description}</p>
+                <p>Rs. {event.price}</p>
+                {/* <p>Rating {event.rating}</p> */}
+                </div>
+            </div>
+        </div>
 </div>
   )
 }
