@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo2.png';
+import Logo from '../../assets/logo3.png';
 import './Header.css';
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -11,25 +11,21 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
     const navigate = useNavigate();
 
-  const handleAccountClick = () => {
-    navigate("/Jewellery-Website/login"); // Navigate to the account route
-  };
+    const handleAccountClick = () => {
+        navigate("/Jewellery-Website/login");
+    }
 
-  const handleWishlistClick = () => {
-    navigate("/Jewellery-Website/wishlist"); // Navigate to the wishlist route
-  };
+    const handleWishlistClick = () => {
+        navigate("/Jewellery-Website/wishlist");
+    };
 
-  const handleCartClick = () => {
-    navigate("/Jewellery-Website/cart"); // Navigate to the cart route
-  };
+    const handleCartClick = () => {
+        navigate("/Jewellery-Website/cart");
+    };
 
-  const handleHomeClick = () => {
-    navigate("/Jewellery-Website/");
-  }
-
-
-
-
+    const handleHomeClick = () => {
+        navigate("/Jewellery-Website/");
+    }
 
     return (
         <>
@@ -48,17 +44,17 @@ const Header = () => {
                         </div>
 
                         <div onClick={handleAccountClick}>
-                            <i><FaRegUser className='icon-right'/></i>
+                            <i><FaRegUser className='icon-right' /></i>
                             <p>Account</p>
                         </div>
 
                         <div onClick={handleWishlistClick}>
-                            <i><FaRegHeart className='icon-right'/></i>
+                            <i><FaRegHeart className='icon-right' /></i>
                             <p>Wishlist</p>
                         </div>
 
                         <div onClick={handleCartClick}>
-                            <i><MdOutlineShoppingCart className='icon-right'/></i>
+                            <i><MdOutlineShoppingCart className='icon-right' /></i>
                             <p>Cart</p>
                         </div>
                     </div>
@@ -88,5 +84,6 @@ const Header = () => {
         </>
     )
 }
+
 
 export default Header;
