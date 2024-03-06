@@ -147,9 +147,36 @@
 .simple_product_content .product_price span.current_price {
   color: #a8741a;
   font-weight: 500;
-  
+
 }
 
+/* ***********************over ************** */
+
+/* ********************** Footer payment option ********************/
+.payment_area a img{
+  width: 60px;
+  height: 40px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+/* ************************** Footer payment option *********************/
+@media screen and (max-width: 2560px) {
+  .row{
+    /* display: flex; */
+    align-items: start;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+  }
+}
+@media screen and (max-width: 1460px) {
+  .row{
+    /* display: flex; */
+    align-items: start;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+  }
+}
 
 @media screen and (max-width:450px){
   .row{
@@ -254,32 +281,3 @@
 .simple_product_thumb{
   margin-left: 10%;
 }
-@media screen and (max-width: 1100px) {
-  .row{
-    display: flex;
-    align-items: normal;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .footer_contact p{
-    text-align: start;
-  }
-  .contact_us h3{
-    text-align: start;
-  }
-  .widget_menu .footer_menu ul li a{
-    text-align: center;
-  }
-}
-/* ***********************over ************** */
-
-/* ********************** Footer payment option ********************/
-.payment_area a img{
-  width: 60px;
-  height: 40px;
-  margin-left: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
-/* ************************** Footer payment option *********************/
-
