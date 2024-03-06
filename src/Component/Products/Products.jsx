@@ -1,7 +1,5 @@
-import React from "react";
 import "./Products.css";
 import { Link } from "react-router-dom";
-
 
 const products = [
                 {imagename: "https://www.giva.co/cdn/shop/products/BR046_1_2_a91b3ca0-1829-4267-a462-48ac2187e87b.jpg?v=1652443622&width=713",
@@ -68,7 +66,7 @@ const Products = () => {
         {products.map((product, index) => (
         <div className="box" key={index}>
             <div className="card">
-          <Link to={`/product/${index}`} state={{ product: products[index] }}>
+          <Link to={`/Jewellery-Website/product/${index}`} state={{ product: products[index] }}>
               <div className="image">
                 <img src={product.imagename} alt="image" /> 
                  </div>
