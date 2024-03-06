@@ -24,8 +24,8 @@ function App() {
           <>
             <SimpleSlider />
             <RingCategories />
-            <EssentialProduct/>
             <CustomerStory />
+            <EssentialProduct/>
           </>
           } />
 
