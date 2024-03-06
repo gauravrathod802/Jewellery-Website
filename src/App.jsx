@@ -10,6 +10,8 @@ import SignUp from './Component/Authentication/SignUp';
 import EssentialProduct from './Component/Kalyani Essentials/EssentialProduct';
 import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
+import Products from "./Component/Products/Products";
+import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
 
 function App() {
 
@@ -24,8 +26,9 @@ function App() {
           <>
             <SimpleSlider />
             <RingCategories />
-            <CustomerStory />
             <EssentialProduct/>
+            <Products/>
+            <CustomerStory />
           </>
           } />
 
@@ -33,6 +36,7 @@ function App() {
         <Route path="/Jewellery-Website/sign-up" element={<SignUp/>}/>
         <Route path='/Jewellery-Website/cart' element={<Cart/>}/>
         <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
+        <Route path='/product/:index' element={<SinglePageProduct/>} />
       </Routes>
       <Footer/>
     </>
