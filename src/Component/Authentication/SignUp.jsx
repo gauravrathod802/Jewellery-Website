@@ -3,6 +3,34 @@ import './SignUp.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from 'react-router-dom';
+
+
+// import { createGlobalStyle } from "styled-components";
+
+// const GlobalStyleSignup = createGlobalStyle`
+
+
+// html,body{
+//   font-family: 'lato', sans-serif;
+//   font-size: 100%;
+
+//   @media (max-width: 768px) {
+//     font-size:50%;
+//   }
+//   @media (max-width: 450px) {
+//     font-size:40%;
+//   }
+// }
+// body{
+//   font-size: initial;
+// }
+
+// `;
+
+
+
+
+
 const SignUp = () => {
   const [passwordType, setPasswordType] = useState('password');
   const [passwordIcon, setPasswordIcon] = useState(<FaEyeSlash />);
@@ -25,7 +53,8 @@ const SignUp = () => {
 
   return (
     <div className='main'>
-      <div className="login-container">
+      {/* <GlobalStyleSignup/> */}
+      <div className="signup-container">
         <form action="" className='myForm'>
           <h2>Sign Up</h2><br />
 

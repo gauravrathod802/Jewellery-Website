@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
 .login-container{
@@ -19,16 +18,16 @@
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
-.loginForm h2{
+.login-container .loginForm h2{
     color: orangered;
     margin-top: -10px;
 }
 
-.loginForm p{
+.login-container .loginForm p{
     font-size: 0.8rem;
     text-align: center;
 }
-.loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
+.login-container .loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -37,7 +36,7 @@
     margin-bottom: 0.7rem;
     outline-color: orangered;
 }
-.loginBtn{
+.login-container .loginBtn{
     width: 100%;
     border-radius:5px;
     border: none;
@@ -49,16 +48,16 @@
 
 }
 
-.loginBtn:hover{
+.login-container .loginBtn:hover{
     cursor: pointer;
     transform: scale(1.02);
 }
 
-.inputWithIcon {
+.login-container .inputWithIcon {
     position: relative;
 }
 
-.loginForm .icon {
+.login-container .loginForm .icon {
     position: absolute;
     left:8px; /* Adjust the left position as needed */
     top: 35%;
@@ -66,7 +65,7 @@
     color: #666; /* Adjust the color as needed */
 }
 
-.eyeIcon{
+.login-container .eyeIcon{
     position: absolute;
     right: 14px;
     top:0;
@@ -78,7 +77,7 @@
     align-items: center;
 }
 
-.title{
+.login-container .title{
     max-width: 450px;
     text-align: center;
     margin: auto;
@@ -86,7 +85,7 @@
 
 }
 
-.title::before{
+.login-container .title::before{
     content: "";
     width: 90px;
     height: 0.5px;
@@ -96,7 +95,7 @@
     top: 50%;
     left: 0;
 }
-.title::after{
+.login-container .title::after{
     content: "";
     width: 90px;
     height: 0.5px;
@@ -107,12 +106,12 @@
     right: 0;
 }
 
-a{
+.login-container a{
     color: orangered;
     text-decoration: none;
 }
 
-.social{
+.login-container .social{
     display: flex;
     justify-content: center;
     font-size:  1.4rem;
@@ -121,7 +120,7 @@ a{
 
 }
 
-.google{
+.login-container .google{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +131,7 @@ a{
     font-size: 0.8rem;
     cursor: pointer;
 }
-.google a{
+.login-container .google a{
     margin-left: -0.8rem;
     font-size: 1.2rem;
 }
@@ -140,22 +139,22 @@ a{
     margin-right: 0.8rem;
 }
 
-.google:hover{
+.login-container .google:hover{
     transform: scale(1.02);
 }
 
 
 
 @media screen and (max-width: 768px) {
-    .loginForm {
+    .login-container .loginForm {
         padding: 25px; 
         margin: 2.5rem;
     }
-    .loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
+    .login-container .loginForm input[type="email"], .loginForm input[type="password"],.loginForm input[type="text"]{
         padding-left: 35px !important;
     }
 
-    .loginBtn{
+    .login-container .loginBtn{
         margin: 1rem 0;
     }
     .loginForm p{
@@ -164,21 +163,29 @@ a{
 }
 
 @media screen and (max-width: 500px) {
-    .loginForm {
+    .login-container .loginForm {
         padding: 20px; 
         margin: 2.5rem 4.3rem;
     }
 
-    .loginForm p{
+    .login-container .loginForm p{
         font-size: 0.6rem ;
     }
 
-    .google a{
+    .login-container .google a{
         margin-left: -1.1rem;
         font-size: 1.1rem;
     }
-    .google span{
+    .login-container .google span{
         font-size: 0.7rem;
         margin-right: 0.12rem;
     }
+
+    .login-container .title::before{
+        width: 75px;
+    }
+    .login-container .title::after{
+        width: 75px;
+    }
+
 }

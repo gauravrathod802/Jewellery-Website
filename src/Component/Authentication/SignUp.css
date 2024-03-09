@@ -5,7 +5,7 @@
 
 }
 
-.login-container{
+.signup-container{
     display: flex;
     justify-content: center;
     width: auto;
@@ -13,22 +13,22 @@
     margin-bottom: 2rem;
 }
 
-.myForm{
+.signup-container .myForm{
     background-color: rgb(214, 225, 229);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 20px 20px 60px #00000041;
 }
 
-.myForm h2{
+.signup-container .myForm h2{
     color: orangered;
 }
 
-.myForm p{
+.signup-container .myForm p{
     font-size: 0.8rem;
     text-align: center;
 }
-.myForm input[type="email"],.myForm input[type="password"],.myForm input[type="text"]{
+.signup-container .myForm input[type="email"],.myForm input[type="password"],.myForm input[type="text"]{
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -38,7 +38,7 @@
     outline-color: orangered;
 }
 
-.loginBtn{
+.signup-container .loginBtn{
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -50,16 +50,16 @@
 
 }
 
-.loginBtn:hover{
+.signup-container .loginBtn:hover{
     cursor: pointer;
     transform: scale(1.02);
 }
 
-.inputWithIcon {
+.signup-container .inputWithIcon {
     position: relative;
 }
 
-.myForm .icon {
+.signup-container .myForm .icon {
     position: absolute;
     left:8px; 
     top: 35%;
@@ -67,7 +67,7 @@
     color: #666;
 }
 
-.eyeIcon{
+.signup-container .eyeIcon{
     position: absolute;
     right: 14px;
     top:0;
@@ -79,7 +79,7 @@
     align-items: center;
 }
 
-.title{
+.signup-container .title{
     max-width: 450px;
     text-align: center;
     margin: auto;
@@ -87,7 +87,7 @@
 
 }
 
-.title::before{
+.signup-container .title::before{
     content: "";
     width: 90px;
     height: 0.5px;
@@ -97,7 +97,7 @@
     top: 50%;
     left: 0;
 }
-.title::after{
+.signup-container .title::after{
     content: "";
     width: 90px;
     height: 0.5px;
@@ -108,12 +108,12 @@
     right: 0;
 }
 
-a{
+.signup-container a{
     color: orangered;
     text-decoration: none;
 }
 
-.social{
+.signup-container .social{
     display: flex;
     justify-content: center;
     font-size:  1.3rem;
@@ -122,7 +122,7 @@ a{
 
 }
 
-.google{
+.signup-container .google{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,26 +134,26 @@ a{
     cursor: pointer;
     /* width: 100%; */
 }
-.google a{
+.signup-container .google a{
     margin-left: -0.8rem;
     font-size: 1.2rem;
 }
-.google span{
+.signup-container .google span{
     margin-right: 0.8rem;
 }
 
 /* Responsiveness for Tablet */
 @media screen and (max-width: 768px) {
-    .myForm {
+    .signup-container .myForm {
         padding: 25px; 
         margin: 2.5rem;
     }
 
-    .loginBtn{
+    .signup-container .loginBtn{
         margin: 1rem 0;
         margin-right: 7px;   
     }
-    .myForm p{
+    .signup-container .myForm p{
         font-size: 0.8rem ;
     }
 }
@@ -161,21 +161,29 @@ a{
 
 /* Responsiveness for Mobile */
 @media screen and (max-width: 500px) {
-    .myForm {
+    .signup-container .myForm {
         padding: 25px; 
         margin: 2.5rem 4.3rem;
     }
 
-    .myForm p{
+    .signup-container .myForm p{
         font-size: 0.6rem ;
     }
 
-    .google a{
+    .signup-container .google a{
         margin-left: -1.1rem;
         font-size: 1.1rem;
     }
-    .google span{
+    .signup-container .google span{
         font-size: 0.7rem;
         margin-right: 0.12rem;
+    }
+
+
+    .signup-container .title::before{
+        width: 70px;
+    }
+    .signup-container .title::after{
+        width: 70px;
     }
 }
