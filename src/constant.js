@@ -10,47 +10,47 @@ export const routes = [
         subRoutes: [
           {
             name: "Rings",
-            link: "/category/Rings",
+            link: "/Jewellery-Website/category/Rings",
           },
           {
             name: "NeckLaces",
-            link: "/category/necklaces",
+            link: "/Jewellery-Website/category/necklaces",
           },
           {
             name: "Earrings",
-            link: "/category/earrings",
+            link: "/Jewellery-Website/category/earrings",
           },
           {
             name: "Bracelets",
-            link: "/category/bracelets",
+            link: "/Jewellery-Website/category/bracelets",
           },
         ],
   
       },
       {
         name: "Latest Collections",
-        link: "/latest-collections",
+        link: "/Jewellery-Website/latest-collections",
       },
       {
         name: "New Arrivals",
-        link: "/new-arrivals",
+        link: "/Jewellery-Website/new-arrivals",
       },
   
       {
         name: "Offers",
-        link: "/offers",
+        link: "/Jewellery-Website/offers",
       },
   
       {
         name: "Bestsellers",
-        link: "/best-sellers",
+        link: "/Jewellery-Website/best-sellers",
       },
       {
         name: "Login",
-        link: "/login",
+        link: "/Jewellery-Website/login",
       },
       {
         name: "Register",
-        link: "/register",
+        link: "/Jewellery-Website/sign-up",
       },
     ];

@@ -42,7 +42,7 @@ const SubRoutesContainer = styled.div`
 const SMenu = styled.div``;
 
 const MenuButton = styled.div`
-font-size: 0.7rem;
+font-size: 0.82rem;
 padding: 0.5rem 0;
   display: flex;
   align-items: center;
@@ -56,14 +56,14 @@ const MenuIconWrapper = styled.div`
 `;
 
 const CategoryName = styled.span`
-  margin-left: 1rem; 
+  margin-left: 0.7rem; 
 `;
 
 const SubRoute = styled(Link)`
   text-decoration: none;
   color: black;
   padding: 0.2rem;
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   margin-left: 1.4rem; 
 
 `;
