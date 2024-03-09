@@ -230,7 +230,7 @@ const NavRouteWrapper = styled.div`
   align-items: center;
 `;
 const NavIcon = styled.div`
-  margin-right: 0.35rem;
+  margin-right: 0.2rem;
   font-size: 1rem;
   display: flex; 
   align-items: center; /* Center icon vertically */
@@ -238,7 +238,7 @@ const NavIcon = styled.div`
 const NavRoute = styled(Link)`
   text-decoration: none;
   color: black;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding: 0.4rem;
 `;
 
