@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './Component/Header/Header';
+// import Header from './Component/Header/Header';
 import Footer from './Component/Footer/Footer';
 import SimpleSlider from './Component/Slider/SimpleSlider';
 import CustomerStory from './Component/CustomerStories/CustomerStory';
@@ -12,15 +12,16 @@ import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
 import Products from './Component/Products/Products';
 import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
+import Navigation from './Component/Header/Navigation';
+
 
 function App() {
 
   return (
     <>
-      <Header/>
-      {/* <SimpleSlider/> */}
-      {/* <RingCategories/> */}
-      {/* <CustomerStory/> */}
+    <Navigation/>
+      {/* <Header/> */}
+
       <Routes>
         <Route path="/Jewellery-Website/" element={
           <>
@@ -44,4 +45,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
