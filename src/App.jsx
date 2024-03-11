@@ -12,7 +12,6 @@ import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
 import Products from './Component/Products/Products';
 import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
-import Checkout from './Component/ProductCheckout/Checkout';
 
 function App() {
 
@@ -40,7 +39,6 @@ function App() {
         <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
         <Route path='/Jewellery-Website/product/:index' element={<SinglePageProduct/>} />
   
-        <Route path='/Jewellery-Website/product/checkout/' element={<Checkout/>} />
       </Routes>
       <Footer/>
     </>
