@@ -1,0 +1,283 @@
+.checkout-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.checkout-bottom p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Lato";
+}
+.checkout-leftpart{
+    width: 60%;
+    height: auto;
+    background-color: #c4ade610; 
+    padding: 0 20px 20px 20px;
+}
+.checkout-leftpart .checkout-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.checkout-leftpart .checkout-leftpart-namefield{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.checkout-leftpart .checkout-leftpart-namefield input{
+    padding: 10px;
+    padding-left: 10px;
+    width: 40%;
+    border-radius: 5px;
+}
+.checkout-leftpart .checkout-bottom #address{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.checkout-leftpart .checkout-bottom #apartment{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.checkout-leftpart .checkout-bottom .checkout-citydetails{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkout-leftpart .checkout-bottom .checkout-citydetails #city{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkout-leftpart .checkout-bottom .checkout-citydetails #state{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+}
+.checkout-leftpart .checkout-bottom .checkout-citydetails #pincode{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkout-leftpart .checkout-bottom form #phone{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkout-bottom .checkout-citydetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* payment option */
+.checkout-payment{
+    margin-top: 30px;
+    margin-left: 16%;
+}
+.checkout-payment h1{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Lato";
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-option{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-option input{
+   width: 25px;
+   height: 25px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-option p{
+    font-size: 20px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-option img{
+    width: 5%;
+    border-radius: 10px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-option-text{
+    margin: 5px 14%;
+    font-size: 25px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-phonepay{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 8px 14%;
+    font-size: 20px;
+}
+.checkout-payment .checkout-payment-by-upi .checkout-payment-phonepay input{
+    width: 18px;
+    height: 18px;
+}
+
+.checkout-payment .checkout-payment-option-by-wallete{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.checkout-payment .checkout-payment-option-by-wallete input{
+   width: 25px;
+   height: 25px;
+}
+.checkout-payment .checkout-payment-option-by-wallete p{
+    font-size: 20px;
+}
+.checkout-payment .checkout-payment-option-by-wallete img{
+    width: 5%;
+    border-radius: 10px;
+}
+.checkout-leftpart hr{
+    margin: 30px 0 20px 0;
+    width: 100%;
+}
+.checkout-payment .checkout-payment-option-by-creditcard{
+    margin-top: 20px;
+}
+.checkout-payment .checkout-payment-option-by-creditcard .checkout-payment-option-by-creditcard-contains{
+    display: flex;
+    gap: 2rem;
+}
+.checkout-payment .checkout-payment-option-by-creditcard .checkout-payment-option-by-creditcard-contains p{
+    font-size: 20px;
+}
+.checkout-payment .checkout-payment-option-by-creditcard-text{
+    margin: 10px 40px;
+}
+.checkout-payment .checkout-payment-option-by-creditcard .checkout-payment-option-by-creditcard-contains input{
+    width: 22px;
+    height: 22px;
+}
+/********************* payment option end here  ******************************/
+
+/* ********************** right division start here ************************** */
+.checkout-rightpart{
+    width: 35%;
+    /* height: 50vh; */
+    background-color: rgba(0, 0, 255, 0.032);
+}
+.checkout-rightpart h1{
+    margin: 20px 10%;
+    font-size: 30px;
+    font-weight: 500;
+}
+.checkout-rightpart .checkout-product-details-container {
+    margin-left: 10%;
+}
+.checkout-rightpart .checkout-product-details-container .checkout-productdetailes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.checkout-rightpart .checkout-product-details-container .checkout-productdetailes img{
+    width: 15%;
+    height: auto;
+}
+.checkout-rightpart .checkout-product-details-container .checkout-productdetailes .price{
+    margin-right: 30px;
+}
+.checkout-rightpart .checkout-product-details-container .checkout-calculated-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkout-rightpart .checkout-product-details-container .checkout-calculated-price .price{
+    margin-right: 30px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .checkout-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto; 
+    }
+    .checkout-leftpart{
+        width: 100%;
+        height: auto;
+        background-color: #c4ade610; 
+        padding: 0 20px 20px 20px;
+    }
+    .checkout-leftpart .checkout-bottom{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1px;
+    }
+    .checkout-payment{
+        margin-top: 30px;
+        margin-left: 1px;
+    }
+    .checkout-rightpart{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .checkout-bottom p{
+        font-size: 22px;
+    }
+    .checkout-payment h1{
+        font-size: 22px;
+    } 
+
+    .checkout-rightpart h1{
+        font-size: 22px;
+    }
+    .checkout-payment .checkout-payment-by-upi .checkout-payment-option-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .checkout-leftpart{
+        width: 100%;
+        height: auto;
+        background-color: #c4ade610; 
+        padding: 0 20px 20px 20px;
+    }
+    .checkout-leftpart .checkout-bottom{
+        margin-left: 1px;
+    }
+    .checkout-payment{
+        margin-top: 30px;
+        margin-left: 1px;
+    }
+    .checkout-rightpart{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .checkout-bottom p{
+        font-size: 22px;
+    }
+    .checkout-payment h1{
+        font-size: 22px;
+    } 
+    .checkout-rightpart h1{
+        font-size: 22px;
+    }
+    .checkout-payment .checkout-payment-by-upi .checkout-payment-option-text{
+        font-size: 20px;
+    }
+}
