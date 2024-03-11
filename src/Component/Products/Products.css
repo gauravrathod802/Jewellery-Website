@@ -23,10 +23,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase;
   background: linear-gradient(to right, #c72092, #6c14d0);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 .products .box {
   margin: 0 auto;
@@ -84,6 +84,7 @@
   background-color: rgb(159,32,137);
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
