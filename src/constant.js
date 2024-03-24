@@ -24,6 +24,23 @@ export const routes = [
             name: "Bracelets",
             link: "/Jewellery-Website/category/bracelets",
           },
+          {
+            name: "Daily",
+            link: "/Jewellery-Website/category/bracelets",
+          },
+          {
+            name: "Office",
+            link: "/Jewellery-Website/category/office",
+          },
+
+          {
+            name: "Traditional",
+            link: "/Jewellery-Website/category/traditional",
+          },
+          {
+            name: "Cocktail",
+            link: "/Jewellery-Website/category/cocktail",
+          }, 
         ],
   
       },
@@ -39,6 +56,10 @@ export const routes = [
       {
         name: "Offers",
         link: "/Jewellery-Website/offers",
+      },
+      {
+        name: "About us",
+        link: "/Jewellery-Website/about-us",
       },
   
       {
