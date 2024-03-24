@@ -40,7 +40,6 @@ function App() {
         <Route path='/Jewellery-Website/cart' element={<Cart/>}/>
         <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
         <Route path='/Jewellery-Website/product/:index' element={<SinglePageProduct/>} />
-        <Route path='/Jewellery-Website/about-us' element={<About/>}/>
 
       </Routes>
       <Footer/>
