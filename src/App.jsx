@@ -13,8 +13,6 @@ import Wishlist from './Component/Wishlist/Wishlist';
 import Products from './Component/Products/Products';
 import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
 import Navigation from './Component/Header/Navigation';
-import About from './Component/Pages/About';
-
 
 function App() {
 
