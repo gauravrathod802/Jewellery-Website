@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about-container{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container img{
+    display: block;
+    margin: 0 auto; /* This will center the image horizontally */
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 2rem;
+
+}
+
+.about-container p{
+    /* width: 80%; */
+    text-align: center;
+    padding: 1rem;
+    margin:0 10rem
+}
+.about-container p h3{
+    text-align: center;
+    padding: 1rem;
+}
