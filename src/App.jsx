@@ -14,7 +14,7 @@ import Products from './Component/Products/Products';
 import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
 import Navigation from './Component/Header/Navigation';
 import About from './Component/Pages/About';
-
+import Checkout from './Component/ProductCheckout/Checkout';
 
 function App() {
 
@@ -39,8 +39,8 @@ function App() {
         <Route path="/Jewellery-Website/sign-up" element={<SignUp/>}/>
         <Route path='/Jewellery-Website/cart' element={<Cart/>}/>
         <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
-        <Route path='/Jewellery-Website/product/:index' element={<SinglePageProduct/>} />
-
+        <Route path='/Jewellery-Website/product/:index' element={<SinglePageProduct/>} />        
+        <Route path='/Jewellery-Website/product/checkout' element={<Checkout/>}/>
         <Route path='/Jewellery-Website/about-us' element={<About/>}/>
   
       </Routes>
