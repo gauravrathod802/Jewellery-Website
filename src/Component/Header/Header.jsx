@@ -92,7 +92,7 @@
 
 
 
-import Logo from "../../assets/logo3.png";
+import Logo from "../../assets/Dhriti_Logo.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
