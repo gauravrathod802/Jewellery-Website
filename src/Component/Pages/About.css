@@ -19,7 +19,6 @@
 }
 
 .about-container p{
-    /* width: 80%; */
     text-align: center;
     padding: 1rem;
     margin:0 10rem
@@ -27,4 +26,23 @@
 .about-container p h1{
     text-align: center;
     padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 780px) {
+
+    .about-container p{
+        text-align: center;
+        padding: 1rem;
+        margin:0 1rem;
+        font-size: 0.9rem
+    }
+
+    .about-container p h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
 }
